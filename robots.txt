@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://XYZ321COD.github.io/home-page/sitemap.xml
