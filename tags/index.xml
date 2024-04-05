@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Mi Page</title>
-    <link>https://michalznalezniak.com/tags/</link>
+    <link>https://XYZ321COD.github.io/home-page/tags/</link>
     <description>Recent content in Tags on Mi Page</description>
     <image>
       <title>Mi Page</title>
-      <url>https://michalznalezniak.com/images/papermod-cover.png</url>
-      <link>https://michalznalezniak.com/images/papermod-cover.png</link>
+      <url>https://XYZ321COD.github.io/home-page/images/papermod-cover.png</url>
+      <link>https://XYZ321COD.github.io/home-page/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://michalznalezniak.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://XYZ321COD.github.io/home-page/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clustering</title>
-      <link>https://michalznalezniak.com/tags/clustering/</link>
+      <link>https://XYZ321COD.github.io/home-page/tags/clustering/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://michalznalezniak.com/tags/clustering/</guid>
+      <guid>https://XYZ321COD.github.io/home-page/tags/clustering/</guid>
       <description></description>
     </item>
     <item>
       <title>Deep Learning</title>
-      <link>https://michalznalezniak.com/tags/deep-learning/</link>
+      <link>https://XYZ321COD.github.io/home-page/tags/deep-learning/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://michalznalezniak.com/tags/deep-learning/</guid>
+      <guid>https://XYZ321COD.github.io/home-page/tags/deep-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Representation Learning</title>
-      <link>https://michalznalezniak.com/tags/representation-learning/</link>
+      <link>https://XYZ321COD.github.io/home-page/tags/representation-learning/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://michalznalezniak.com/tags/representation-learning/</guid>
+      <guid>https://XYZ321COD.github.io/home-page/tags/representation-learning/</guid>
       <description></description>
     </item>
   </channel>
