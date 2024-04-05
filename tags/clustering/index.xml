@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Clustering on Mi Page</title>
-    <link>https://XYZ321COD.github.io/home-page/tags/clustering/</link>
+    <link>https://michalznalezniak.com/tags/clustering/</link>
     <description>Recent content in Clustering on Mi Page</description>
     <image>
       <title>Mi Page</title>
-      <url>https://XYZ321COD.github.io/home-page/images/papermod-cover.png</url>
-      <link>https://XYZ321COD.github.io/home-page/images/papermod-cover.png</link>
+      <url>https://michalznalezniak.com/images/papermod-cover.png</url>
+      <link>https://michalznalezniak.com/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://XYZ321COD.github.io/home-page/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://michalznalezniak.com/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contrastive Hierarchical Clustering</title>
-      <link>https://XYZ321COD.github.io/home-page/posts/post1/</link>
+      <link>https://michalznalezniak.com/posts/post1/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://XYZ321COD.github.io/home-page/posts/post1/</guid>
+      <guid>https://michalznalezniak.com/posts/post1/</guid>
       <description>In this post, I would like to introduce you to CoHiClust, a Contrastive Hierarchical Clustering model based on deep neural networks, which can be applied to typical image data. CoHiClust distills the base network into a binary tree without access to any labeled data. CoHiClust outperforms the established and popular Agglomerative Clustering and generates a hierarchical structure of clusters consistent with human intuition and image semantics.
 You can access the full paper of CoHiClust by clicking here.</description>
     </item>

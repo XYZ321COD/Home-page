@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://XYZ321COD.github.io/home-page/sitemap.xml
+Sitemap: https://michalznalezniak.com/sitemap.xml
