@@ -1,7 +1,7 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://michalznalezniak.com/"
-title: Mi Page
+title: Michal Znalezniak
 paginate: 5
 theme: [PaperMod]
 
@@ -75,7 +75,7 @@ params:
 
   profileMode:
     enabled: false
-    title: PaperMod
+    title: michal znalezniak machine learning deep learning artificial intelligence research
     imageUrl: "#"
     imageTitle: my image
     # imageWidth: 120
