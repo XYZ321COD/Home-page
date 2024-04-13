@@ -53,9 +53,9 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
-  # author: ["Me", "You"] # multiple authors
+  description:  Michal Znalezniak personal blog about deep learning, machine learning and artificial intelligence.
+  author: Michal Znalezniak
+  title: michal znalezniak machine learning deep learning artificial intelligence research
 
   defaultTheme: auto
   # disableThemeToggle: true
@@ -120,9 +120,9 @@ params:
 
   assets:
     disableHLJS: true
-  #     favicon: "<link / abs url>"
-  #     favicon16x16: "<link / abs url>"
-  #     favicon32x32: "<link / abs url>"
+    favicon: "assets/favicon.ico"
+    favicon16x16: "assets/favicon-16x16.png"
+    favicon32x32: "assets/favicon-32x32.png"
   #     apple_touch_icon: "<link / abs url>"
   #     safari_pinned_tab: "<link / abs url>"
 
