@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SISR on Michal Znalezniak</title>
+    <link>https://michalznalezniak.com/tags/sisr/</link>
+    <description>Recent content in SISR on Michal Znalezniak</description>
+    <image>
+      <title>Michal Znalezniak</title>
+      <url>https://michalznalezniak.com/images/papermod-cover.png</url>
+      <link>https://michalznalezniak.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://michalznalezniak.com/tags/sisr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Single Image Super Resolution with various prediction networks</title>
+      <link>https://michalznalezniak.com/posts/post2/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://michalznalezniak.com/posts/post2/</guid>
+      <description>The goal of single-image super-resolution (SISR) is to transform a low-resolution image into a high-resolution version, enhancing both its detail and quality. This process, called upscaling, increases the image&amp;rsquo;s spatial resolution while sharpening and clarifying its visual features.
+While the objective remains the same, the methods to achieve SISR can vary. In this post (Part 1), I&amp;rsquo;ll explore three different neural network-based SISR approaches: color prediction, residual prediction, and kernel prediction.</description>
+    </item>
+  </channel>
+</rss>

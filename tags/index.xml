@@ -34,5 +34,33 @@
       <guid>https://michalznalezniak.com/tags/representation-learning/</guid>
       <description></description>
     </item>
+    <item>
+      <title>SISR</title>
+      <link>https://michalznalezniak.com/tags/sisr/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://michalznalezniak.com/tags/sisr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SR</title>
+      <link>https://michalznalezniak.com/tags/sr/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://michalznalezniak.com/tags/sr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Super Resolution</title>
+      <link>https://michalznalezniak.com/tags/super-resolution/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://michalznalezniak.com/tags/super-resolution/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unet</title>
+      <link>https://michalznalezniak.com/tags/unet/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://michalznalezniak.com/tags/unet/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
