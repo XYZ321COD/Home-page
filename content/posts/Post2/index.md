@@ -39,11 +39,10 @@ In the original U-Net architecture, the decoder phase uses transposed convolutio
 *Figure 2: U-Net architecture used for this project. The numbers above the features (purple rectangles) correspond to the number of feature channels.*
 
 <br>
-
-<figure style="text-align: center;">
-    <img width="33%" src="images/UNet-Block.png" alt="UNet Block">
-    <figcaption>Figure 3: The structure of U-Net block.</figcaption>
-</figure>
+<p>
+<center><img width="33%" src="images/UNet-Block.png" alt="UNet Block"></center>
+<center><figcaption>Figure 3: The structure of U-Net block.</figcaption></center>
+</p>
 
 # Prediction Networks
 ## Color Prediction
@@ -57,13 +56,15 @@ As previously discussed in this stage of the project, the feature extraction ($F
 
 For color prediction, $N$ directly reconstructs a high-resolution image $I^{HR}$.
 
-$$ N(x) = PN(FE(x)) \approx I^{HR}$$
+$$ 
+N(x) = PN(FE(x)) \approx I^{HR} 
+$$
 
 <br>
-<figure style="text-align: center;">
-    <img  width="75%" src="images/Color_Prediction.png" alt="Residual Prediction">
-    <figcaption>Figure 4: Example input, prediction and ground-truth patch from Set5 for color prediction.</figcaption>
-</figure>
+<p>
+<center><img src="images/Color_Prediction.png"></center>
+<center><figcaption>Figure 4: Example input, prediction and ground-truth patch from Set5 for color prediction.</figcaption></center>
+</p>
 
 ## Residual Prediction
 ### Introduction
@@ -78,7 +79,9 @@ The prediction network ($PN$) outputs three channels with a single convolutional
 
 For residual prediction, $N$ predicts the missing high-frequency details of $I^{SR}$, known as a residual part of the image $I^{R}$. The residual part of the image is defined as $I^{R} = I^{HR} - I^{SR}$, see Figure 5:
 
-$$ N(x) = PN(FE(x)) + x \approx I^{HR}$$
+$$ 
+N(x) = PN(FE(x)) + x \approx I^{HR} 
+$$
 
 <br>
 <figure style="text-align: center;">
@@ -105,7 +108,7 @@ Kernel prediction uses a single-layer convolutional prediction network ($PN$) th
 
 Letting $N(p)$ be the $k \times k$ neighborhood centered around pixel $p$ , the final layer for each input pixel outputs kernel $z_{p} \in \mathbb{R}^{k \times k}$. The kernel size $k$ is specified before training along with the other network hyperparameters and the same weights are applied to each RGB color channel. Experiments were conducted with $k=3$
 
-Let's define  $\left[\mathbf{z}_{p}\right]_q$ as the  q-th entry in the vector obtained by flattening $z_{p}$, Using this, the final normalized kernel weights can be computed as:
+Let's define  $ \left[\mathbf{z}_{p}\right]_q $ as the  q-th entry in the vector obtained by flattening $z_{p}$, Using this, the final normalized kernel weights can be computed as:
 
 $$
 w_{p q}=\frac{\exp \left(\left[\mathbf{z}_{p}\right]_q\right)}{\sum_{q^{\prime} \in \mathcal{N}(p)} \exp \left(\left[\mathbf{z}_{p}\right]_{q^{\prime}}\right)}
@@ -127,7 +130,7 @@ The minibatch size is set to $16$. The learning rate is initialized as $10^{-3}$
 
 For all setups the networks minimize following loss function:
 
-$$ Loss = \frac{1}{n} \sum^{n}_{i=1} \lvert N(I^{SR}_{i}) - I^{HR}_{i} \rvert $$
+$$ Loss = \frac{1}{n} \sum^{n}_{i=1} N(I^{SR}_{i}) - I^{HR}_{i} $$
 
 where $n$ is the number of samples in a mini-batch, $I^{HR}$ is ground-truth,and $I^{SR}$ is bicubic-upsampled low-resolution images.
 
