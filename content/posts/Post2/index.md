@@ -135,7 +135,7 @@ Loss = \frac{1}{n} \sum^{n}_{i=1} N(I^{SR}_{i}) - I^{HR}_{i}
 $$
 
 $$ 
-Loss2 = \frac{1}{n}
+Loss2 = \frac{1}{n} \sum^{n}_{i=1} i
 $$
 
 where $n$ is the number of samples in a mini-batch, $I^{HR}$ is ground-truth,and $I^{SR}$ is bicubic-upsampled low-resolution images.
