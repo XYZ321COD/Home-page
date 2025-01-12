@@ -1,6 +1,6 @@
 ---
 title: "Single Image Super Resolution with various prediction networks"
-date: 2025-01-24
+date: 2025-01-12
 tags: ['deep learning', 'super resolution', 'unet', 'SISR', 'SR']
 author: Michał Znaleźniak
 math: katex
