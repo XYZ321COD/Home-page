@@ -132,6 +132,7 @@ The model is trained with the Adam optimizer by setting $ \beta_{1}=0.9 $,  $ \b
 The minibatch size is set to $16$. The learning rate is initialized as $10^{-3}$ and halved at every 10 epochs.  All models are trained over $80$ epochs. 
 
 For all setups the networks minimize following loss function:
+<br>
 $$ Loss = \frac{1}{n} \sum^{n}_{i=1} \lvert N(I^{SR}) - I^{HR} \rvert $$
 
 where $n$ is the number of samples in a mini-batch, $I^{HR}$ is ground-truth,and $I^{SR}$ is bicubic-upsampled low-resolution images.
