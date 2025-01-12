@@ -21,13 +21,5 @@
       <description>In this post, I would like to introduce you to CoHiClust, a Contrastive Hierarchical Clustering model based on deep neural networks, which can be applied to typical image data. CoHiClust distills the base network into a binary tree without access to any labeled data. CoHiClust outperforms the established and popular Agglomerative Clustering and generates a hierarchical structure of clusters consistent with human intuition and image semantics.
 You can access the full paper of CoHiClust by clicking here.</description>
     </item>
-    <item>
-      <title>Single Image Super Resolution with various prediction networks</title>
-      <link>https://michalznalezniak.com/posts/post2/</link>
-      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://michalznalezniak.com/posts/post2/</guid>
-      <description>The goal of single-image super-resolution (SISR) is to transform a low-resolution image into a high-resolution version, enhancing both its detail and quality. This process, called upscaling, increases the image&amp;rsquo;s spatial resolution while sharpening and clarifying its visual features.
-While the objective remains the same, the methods to achieve SISR can vary. In this post (Part 1), I&amp;rsquo;ll explore three different neural network-based SISR approaches: color prediction, residual prediction, and kernel prediction.</description>
-    </item>
   </channel>
 </rss>
