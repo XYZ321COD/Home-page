@@ -21,7 +21,7 @@ The performance is measured and compared on three standard benchmark datasets  S
 
 
 <p>
-<center><img width="33%" src="images/Figure_1.png" alt="Figure_1"></center>
+<center><img src="images/Figure_1.png" alt="Figure_1"></center>
 <center><figcaption>Figure 1: Example ground truth images from the datasets: Set5 (left), BSD100 (middle), and SET14 (right).</figcaption></center>
 </p>
 
@@ -37,7 +37,7 @@ Similar to the SRCNN [[6]](#SRCC), VDSR [[7]](#VDSR), and  DRCN [[9]](#DRCN) net
 In the original U-Net architecture, the decoder phase uses transposed convolution for upsampling. However, the current network architecture differs from the original U-Net, as it utilizes bicubic upscaling instead of transposed convolution, see Figure 2. The basic building block for U-Net architecture can be seen on Figure 3.
 
 <p>
-<center><img width="33%" src="images/UNet-Arch-new.png" alt="UNet Block"></center>
+<center><img src="images/UNet-Arch-new.png" alt="UNet Block"></center>
 <center><figcaption>Figure 2: U-Net architecture used for this project. The numbers above the features (purple rectangles) correspond to the number of feature channels.</figcaption></center>
 </p>
 
