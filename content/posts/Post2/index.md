@@ -110,7 +110,7 @@ Kernel prediction uses a single-layer convolutional prediction network ($PN$) th
 
 Letting $N(p)$ be the $k \times k$ neighborhood centered around pixel $p$ , the final layer for each input pixel outputs kernel $z_{p} \in \mathbb{R}^{k \times k}$. The kernel size $k$ is specified before training along with the other network hyperparameters and the same weights are applied to each RGB color channel. Experiments were conducted with $k=3$
 
-Let's define  $ \left[\mathbf{z}_{p}\right]_{q} $ as the  q-th entry in the vector obtained by flattening $z_{p}$, Using this, the final normalized kernel weights can be computed as:
+Let's define  $[\mathbf{z}_{p}]_{q}$ as the  q-th entry in the vector obtained by flattening $z_{p}$, Using this, the final normalized kernel weights can be computed as:
 
 $$
 w_{p q}=\frac{\exp \left(\left[\mathbf{z}_{p}\right]_q\right)}{\sum_{q^{\prime} \in \mathcal{N}(p)} \exp \left(\left[\mathbf{z}_{p}\right]_{q^{\prime}}\right)}
@@ -131,7 +131,6 @@ The model is trained with the Adam optimizer by setting $ \beta_{1}=0.9 $,  $ \b
 The minibatch size is set to $16$. The learning rate is initialized as $10^{-3}$ and halved at every 10 epochs.  All models are trained over $80$ epochs. 
 
 For all setups the networks minimize following loss function:
-
 $$ Loss = \frac{1}{n} \sum^{n}_{i=1} \lvert N(I^{SR}) - I^{HR} \rvert $$
 
 where $n$ is the number of samples in a mini-batch, $I^{HR}$ is ground-truth,and $I^{SR}$ is bicubic-upsampled low-resolution images.
