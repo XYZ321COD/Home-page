@@ -113,8 +113,9 @@ Letting $N(p)$ be the $k \times k$ neighborhood centered around pixel $p$ , the 
 Let's define $z_{p q}$ as the q-th entry in the vector obtained by flattening $z_{p}$, Using this, the final normalized kernel weights can be computed as:
 
 $$
-w_{p q}=\frac{\exp \left(\left[\mathbf{z}_{p}\right]_q\right)}{\sum_{q^{\prime} \in \mathcal{N}(p)} \exp \left(\left[\mathbf{z}_{p}\right]_{q^{\prime}}\right)}
+w_{p q}=\frac{\exp (z_{p q})}{\sum_{q^{\prime} \in \mathcal{N}(p)} \exp (z_{p q^{\prime}})}
 $$
+
 
 and the super-resolved pixel $\tilde p$ color as:
 $$ 
