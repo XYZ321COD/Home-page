@@ -80,7 +80,7 @@ Residual learning shifts the network’s focus to learning the more complex high
 
 The prediction network ($PN$) outputs three channels with a single convolutional layer using a $1×1$ kernel size.
 
-For residual prediction, $N$ predicts the missing high-frequency details of $I^{SR}$, known as a residual part of the image $I^{R}$. The residual part of the image is defined as $I^{R} = I^{HR} - I^{SR}$, see Figure 5:
+For residual prediction, $N$ predicts the missing high-frequency details of $I^{SR}$, known as a residual part of the image $I^{R}$. The residual part of the image is defined as $I^{R} = I^{HR} - I^{SR}$, see Figure 5.
 
 $$ 
 N(x) = PN(FE(x)) + x \approx I^{HR} 
@@ -118,6 +118,7 @@ $$
 
 
 and the super-resolved pixel $\tilde p$ color as:
+
 $$ 
 \tilde p=\sum_{q \in \mathcal{N}(p)} q w_{p q}
 $$ 
@@ -132,7 +133,7 @@ The model is trained with the Adam optimizer by setting $ \beta_{1}=0.9 $,  $ \b
 The minibatch size is set to $16$. The learning rate is initialized as $10^{-3}$ and halved at every 10 epochs.  All models are trained over $80$ epochs. 
 
 For all setups the networks minimize following loss function:
-<br>
+
 $$ Loss = \frac{1}{n} \sum^{n}_{i=1} \lvert N(I^{SR}) - I^{HR} \rvert $$
 
 where $n$ is the number of samples in a mini-batch, $I^{HR}$ is ground-truth,and $I^{SR}$ is bicubic-upsampled low-resolution images.
