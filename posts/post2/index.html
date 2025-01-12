@@ -329,7 +329,7 @@ While the objective remains the same, the methods to achieve SISR can vary. In t
 <h2 id="validation">Validation<a hidden class="anchor" aria-hidden="true" href="#validation">#</a></h2>
 <p>The performance is measured and compared on three standard benchmark datasets  Set5 <a href="/posts/post2/#SET5">[3]</a>, Set14 <a href="/posts/post2/#SET14">[4]</a> and  BSD100 <a href="/posts/post2/#BSD100">[5]</a>. Example images from datasets can be seen in Figure 1.</p>
 <p>
-<center><img width="33%" src="images/Figure_1.png" alt="Figure_1"></center>
+<center><img src="images/Figure_1.png" alt="Figure_1"></center>
 <center><figcaption>Figure 1: Example ground truth images from the datasets: Set5 (left), BSD100 (middle), and SET14 (right).</figcaption></center>
 </p>
 <h1 id="metrics">Metrics<a hidden class="anchor" aria-hidden="true" href="#metrics">#</a></h1>
@@ -339,7 +339,7 @@ While the objective remains the same, the methods to achieve SISR can vary. In t
 <p>Similar to the SRCNN <a href="/posts/post2/#SRCC">[6]</a>, VDSR <a href="/posts/post2/#VDSR">[7]</a>, and  DRCN <a href="/posts/post2/#DRCN">[9]</a> networks, the model $N$ aims to learn an end-to-end mapping function $F$ between the bicubic-interpolated low-resolution image $I^{SR}$ and the high-resolution image $I^{HR}$.</p>
 <p>In the original U-Net architecture, the decoder phase uses transposed convolution for upsampling. However, the current network architecture differs from the original U-Net, as it utilizes bicubic upscaling instead of transposed convolution, see Figure 2. The basic building block for U-Net architecture can be seen on Figure 3.</p>
 <p>
-<center><img width="33%" src="images/UNet-Arch-new.png" alt="UNet Block"></center>
+<center><img src="images/UNet-Arch-new.png" alt="UNet Block"></center>
 <center><figcaption>Figure 2: U-Net architecture used for this project. The numbers above the features (purple rectangles) correspond to the number of feature channels.</figcaption></center>
 </p>
 <br>
