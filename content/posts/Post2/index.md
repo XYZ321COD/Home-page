@@ -132,9 +132,9 @@ The minibatch size is set to $16$. The learning rate is initialized as $10^{-3}$
 
 For all setups the networks minimize following loss function:
 
+$$ X = I^{SR}_{i} $$
+$$ Y = I^{HR}_{i} $$
 $$ Loss(X,Y) = \frac{1}{n} \sum^{n}_{i=1} \lvert N(X) - Y \rvert $$
-
-$$ Loss(I^{SR}_{i}, I^{HR}_{i}) $$
 
 where $n$ is the number of samples in a mini-batch, $I^{HR}$ is ground-truth,and $I^{SR}$ is bicubic-upsampled low-resolution images.
 
