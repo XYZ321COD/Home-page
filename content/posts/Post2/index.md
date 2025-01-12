@@ -1,6 +1,6 @@
 ---
 title: "Single Image Super Resolution with various prediction networks"
-date: 2024-03-24
+date: 2025-01-24
 tags: ['deep learning', 'super resolution', 'unet', 'SISR', 'SR']
 author: Michał Znaleźniak
 math: katex
@@ -20,9 +20,10 @@ State-of-the-art algorithms are evaluated on three standard upscaling scales: 2x
 The performance is measured and compared on three standard benchmark datasets  Set5 [[3]](#SET5), Set14 [[4]](#SET14) and  BSD100 [[5]](#BSD100). Example images from datasets can be seen in Figure 1.
 
 
-
-![Fig1](images/Figure_1.png)
-*Figure 1: Example ground truth images from the datasets: Set5 (left), BSD100 (middle), and SET14 (right).*
+<p>
+<center><img width="33%" src="images/Figure_1.png" alt="Figure_1"></center>
+<center><figcaption>Figure 1: Example ground truth images from the datasets: Set5 (left), BSD100 (middle), and SET14 (right).</figcaption></center>
+</p>
 
 # Metrics
 In line with SRCNN [[6]](#SRCNN), VDSR [[7]](#VDSR), and other similar methods, PSNR and SSIM metrics were calculated on the luminance component of the image. To ensure consistency with SRCNN and VDSR, a 2-pixel border was excluded from all sides of the image before calculating metrics.
@@ -35,8 +36,10 @@ Similar to the SRCNN [[6]](#SRCC), VDSR [[7]](#VDSR), and  DRCN [[9]](#DRCN) net
 
 In the original U-Net architecture, the decoder phase uses transposed convolution for upsampling. However, the current network architecture differs from the original U-Net, as it utilizes bicubic upscaling instead of transposed convolution, see Figure 2. The basic building block for U-Net architecture can be seen on Figure 3.
 
-![Fig2](images/UNet-Arch-new.png)
-*Figure 2: U-Net architecture used for this project. The numbers above the features (purple rectangles) correspond to the number of feature channels.*
+<p>
+<center><img width="33%" src="images/UNet-Arch-new.png" alt="UNet Block"></center>
+<center><figcaption>Figure 2: U-Net architecture used for this project. The numbers above the features (purple rectangles) correspond to the number of feature channels.</figcaption></center>
+</p>
 
 <br>
 <p>
@@ -84,10 +87,10 @@ N(x) = PN(FE(x)) + x \approx I^{HR}
 $$
 
 <br>
-<figure style="text-align: center;">
-    <img  src="images/Residual_Prediction.png" alt="Residual Prediction">
-    <figcaption>Figure 5: Example input, prediction and ground-truth patch from Set5 for residual prediction.</figcaption>
-</figure>
+<p>
+<center><img src="images/Residual_Prediction.png"></center>
+<center><figcaption>Figure 5: Example input, prediction and ground-truth patch from Set5 for residual prediction.</figcaption></center>
+</p>
 
 ## Kernel Prediction
 ### Introduction
@@ -97,11 +100,10 @@ For all image restoration problems, including super resolution the kernel predic
 
 This significantly reduces the output value search space compared to direct color prediction methods, helping to avoid potential hallucination artifacts.
 
-
-<figure style="text-align: center;">
-    <img  src="images/Kernel_Pred_one_pixel.png" alt="Residual Prediction">
-    <figcaption>Figure 6: On the left, pixel <i>p</i> (highlighted in red) and its neighborhood. In the center, the <i>3x3</i> filter predicted for the highlighted pixel. On the right, the super-resolved <i>p</i> after applying filtering.</figcaption>
-</figure>
+<p>
+<center><img src="images/Kernel_Pred_one_pixel.png" alt="Kernel Prediction"></center>
+<center><figcaption>Figure 6: On the left, pixel <i>p</i> (highlighted in red) and its neighborhood. In the center, the <i>3x3</i> filter predicted for the highlighted pixel. On the right, the super-resolved <i>p</i> after applying filtering.</figcaption></center>
+</p>
 
 ### Setup 
 Kernel prediction uses a single-layer convolutional prediction network ($PN$) that outputs a kernel of scalar weights that is applied to the blurry/low-frequency neighborhood of pixel $p$ to produce super resolved $\tilde p$, see Figure 6. 
@@ -129,21 +131,14 @@ The model is trained with the Adam optimizer by setting $ \beta_{1}=0.9 $,  $ \b
 The minibatch size is set to $16$. The learning rate is initialized as $10^{-3}$ and halved at every 10 epochs.  All models are trained over $80$ epochs. 
 
 For all setups the networks minimize following loss function:
-
-$$ 
-Loss = \frac{1}{n} \sum^{n}_{i=1} N(I^{SR}_{i}) - I^{HR}_{i} 
-$$
-
-$$ 
-Loss2 = \frac{1}{n} \sum^{n}_{i=1} N(I^{SR}_{i})
-$$
+$$ Loss = \frac{1}{n} \sum^{n}_{i=1} \lvert N(I^{SR}_{i}) - I^{HR}_{i} \rvert $$
 
 where $n$ is the number of samples in a mini-batch, $I^{HR}$ is ground-truth,and $I^{SR}$ is bicubic-upsampled low-resolution images.
 
-<figure style="text-align: center;">
-    <img  src="images/Loss.png" alt="Loss">
-    <figcaption>Figure 7: Learning curves on the training set.</figcaption>
-</figure>
+<p>
+<center><img src="images/Loss.png" alt="Loss"></center>
+<center><figcaption>Figure 7: Learning curves on the training set.</figcaption></center>
+</p>
 
 ## Evaluation of Different Prediction Networks
 ### Benchmark Results
@@ -165,11 +160,10 @@ The qualitative results are presented in Figure 8. Models based on residual and 
 
 <br>
 </br>
-<figure style="text-align: center;">
-    <img  src="images/Comaprison_for_all_predictors.png" alt="Comaprison_for_all_predictors">
-    <figcaption>Figure 8: Super-resolution results of Image 20 (BSD100) with scale factor ×2.
-    </figcaption>
-</figure>
+<p>
+<center><img src="images/Comaprison_for_all_predictors.png" alt="Comaprison_for_all_predictors"></center>
+<center><figcaption>Figure 8: Super-resolution results of Image 20 (BSD100) with scale factor ×2.</figcaption></center>
+</p>
 
 ## Conclusions
 This post compares various prediction networks for single-image super-resolution (SISR). Models based on residual and kernel prediction converge faster and avoid blur artifacts present in upscaled images produced by the color prediction network. The next post will explore methods to improve the convergence speed of color prediction based model by modifying the feature extractor architecture.
