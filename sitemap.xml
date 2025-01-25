@@ -3,27 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://michalznalezniak.com/tags/deep-learning/</loc>
-    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://michalznalezniak.com/</loc>
-    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://michalznalezniak.com/posts/</loc>
-    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://michalznalezniak.com/posts/post2/</loc>
-    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+    <loc>https://michalznalezniak.com/tags/profiling/</loc>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://michalznalezniak.com/tags/pytorch/</loc>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://michalznalezniak.com/posts/pytorch_how_to_speed_up_data_loading/</loc>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://michalznalezniak.com/tags/sisr/</loc>
-    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://michalznalezniak.com/tags/sr/</loc>
-    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://michalznalezniak.com/tags/super-resolution/</loc>
-    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://michalznalezniak.com/tags/</loc>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://michalznalezniak.com/tags/torch/</loc>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://michalznalezniak.com/posts/post2/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://michalznalezniak.com/tags/unet/</loc>

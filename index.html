@@ -192,6 +192,19 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Pytorch - How to speed up data loading
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In the Single Image Super Resolution with various prediction networks post, we used DIV2K and Flicker2K dataset for training. Below is a python snippet for both datasets.
+from glob import glob import torch from torch.utils.data import Dataset import torchvision from PIL import Image import numpy as np class SuperResolutionDataset(Dataset): def __init__(self, dataset_path, dataset_name_HR, dataset_name_LR, scale, name): self.name = name self.dataset_path = dataset_path self.dataset_name_HR = dataset_name_HR self.dataset_name_LR = dataset_name_LR self.scale = scale self....</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-19 00:00:00 +0000 UTC'>January 19, 2025</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Michał Znaleźniak</footer>
+  <a class="entry-link" aria-label="post link to Pytorch - How to speed up data loading" href="https://michalznalezniak.com/posts/pytorch_how_to_speed_up_data_loading/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Single Image Super Resolution with various prediction networks
     </h2>
   </header>

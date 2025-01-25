@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Profiling on Michal Znalezniak</title>
+    <link>https://michalznalezniak.com/tags/profiling/</link>
+    <description>Recent content in Profiling on Michal Znalezniak</description>
+    <image>
+      <title>Michal Znalezniak</title>
+      <url>https://michalznalezniak.com/images/papermod-cover.png</url>
+      <link>https://michalznalezniak.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://michalznalezniak.com/tags/profiling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pytorch - How to speed up data loading</title>
+      <link>https://michalznalezniak.com/posts/pytorch_how_to_speed_up_data_loading/</link>
+      <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://michalznalezniak.com/posts/pytorch_how_to_speed_up_data_loading/</guid>
+      <description>In the Single Image Super Resolution with various prediction networks post, we used DIV2K and Flicker2K dataset for training. Below is a python snippet for both datasets.
+from glob import glob import torch from torch.utils.data import Dataset import torchvision from PIL import Image import numpy as np class SuperResolutionDataset(Dataset): def __init__(self, dataset_path, dataset_name_HR, dataset_name_LR, scale, name): self.name = name self.dataset_path = dataset_path self.dataset_name_HR = dataset_name_HR self.dataset_name_LR = dataset_name_LR self.scale = scale self.</description>
+    </item>
+  </channel>
+</rss>
